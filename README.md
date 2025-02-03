@@ -10,7 +10,7 @@ A template repository for Advanced Computer Graphics in Game Development course.
   - MSVC on Windows
   - Clang on MacOS
   - GCC on Linux
-- C++ IDE: [CLion](https://www.jetbrains.com/clion/)
+- Code editor: [VSCode](https://code.visualstudio.com/Download)
 - [Vulkan SDK](https://www.lunarg.com/vulkan-sdk/)
 
 ## How to build the project
@@ -20,9 +20,10 @@ Use `git clone --recursive` to clone the repo with submodules or run `git submod
 Go to the project folder and run the next command:
 
 ```shell
-mkdir Build
-cd Build
+mkdir build
+cd build
 cmake ..
+cmake --build .
 ```
 
 ## How to compile shaders
@@ -37,6 +38,12 @@ On Linux or MacOS:
 
 ```shell
 ./compile_shaders.sh
+```
+
+## How to run
+
+```shell
+build/acg_in_gd_lab
 ```
 
 ## Third-party tools and data
